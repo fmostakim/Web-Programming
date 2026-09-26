@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+</head>
+<body>
+    <div class="form-group">
+        <label class="title">Location:</label>
+        <!-- id ছোট হাতের 'location' করা হয়েছে -->
+        <select id="location">
+            <option value="">--Select Location--</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chattogram">Chattogram</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label class="title">Area:</label>
+        <!-- দুটিতেই name="area" রাখা হয়েছে -->
+        <input type="radio" name="area" id="urban" value="Urban">
+        <label for="urban">Urban</label>
+
+        <input type="radio" name="area" id="rural" value="Rural">
+        <label for="rural">Rural</label>
+    </div>
+
+    <div class="form-group">
+        <label class="title">Unit Consumed:</label>
+        <input type="number" id="units">
+    </div>
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
